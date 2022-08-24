@@ -12,6 +12,6 @@ for par in chg chgtil; do python makeChi2Plot.py --poi $par --inputPkl results_a
 ```
 
 A few things to remember:
-- ````Run2Differentials/Hgg/inputs``` relies on the presence inside ```Run2Differentials/Hgg``` of ```mus.json``` and ```correlation_matrix.json```; they are both produced with ```get_mus.py```
+- ```Run2Differentials/Hgg/inputs``` relies on the presence inside ```Run2Differentials/Hgg``` of ```mus.json``` and ```correlation_matrix.json```; they are both produced with ```get_mus.py```
 - about ```get_mus.py```, note that it has to be run with python 3 in an environment where the differential combination postprocessing package is installed; for what concerns the mus, it needs as input the scans (both observed and Asimov) performed in the usual way; the correlation matrix is in the file produced running the scans with ```--saveFitResult```
 - both in ```inputs.py``` and ```functions.py``` the paths are hardcoded and depending on the model to fit/plot they need to be changed by hand
