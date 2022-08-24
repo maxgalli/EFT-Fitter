@@ -24,7 +24,8 @@ with open(opt.inputPkl,"r") as fpkl: results = pickle.load(fpkl)
 
 # Extract full list of pois
 from importlib import import_module
-pois = import_module("params.HEL").pois
+#pois = import_module("params.HEL").pois
+pois = import_module("Run2Differentials.Hgg.parameters").pois
 
 if opt.otherPOIs == "all":
   opoistr = ""
